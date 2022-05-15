@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Reflex
 {
-    internal class UnknownContractException : Exception
+    public class UnknownContractException : Exception
     {
         public UnknownContractException(Type contract) : base(GenerateMessage(contract))
         {

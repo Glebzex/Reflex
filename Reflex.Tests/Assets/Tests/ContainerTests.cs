@@ -280,7 +280,7 @@ namespace Reflex.Tests
 		}
 
 
-		internal class ConstructorCalledException : Exception
+		public class ConstructorCalledException : Exception
 		{
 		}
 		

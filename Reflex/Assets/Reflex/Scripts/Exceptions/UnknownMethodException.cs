@@ -2,7 +2,7 @@ using System;
 
 namespace Reflex
 {
-    internal class UnknownMethodException : Exception
+    public class UnknownMethodException : Exception
     {
         public UnknownMethodException(Type contract) : base(GenerateMessage(contract))
         {

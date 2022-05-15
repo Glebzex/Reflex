@@ -3,7 +3,7 @@ using Reflex.Scripts.Utilities;
 
 namespace Reflex
 {
-    internal class UnhandledRuntimeScriptingBackendException : Exception
+    public class UnhandledRuntimeScriptingBackendException : Exception
     {
         internal UnhandledRuntimeScriptingBackendException(RuntimeScriptingBackend.Backend backend) : base(GenerateMessage(backend))
         {
