@@ -10,7 +10,7 @@ namespace Reflex
             {
                 return method();
             }
-            
+
             throw new UnknownMethodException(contract);
         }
     }

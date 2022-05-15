@@ -11,7 +11,7 @@ namespace Reflex
             constructors = type.GetConstructors();
             return constructors.Length > 0;
         }
-        
+
         internal static string GetFormattedName(this Type type)
         {
             if (type.IsGenericType)

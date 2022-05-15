@@ -41,7 +41,7 @@ namespace Reflex
         {
             return ConstructorInjector.ConstructAndInject<T>(this);
         }
-        
+
         public object Construct(Type concrete)
         {
             return ConstructorInjector.ConstructAndInject(concrete, this);
@@ -57,7 +57,7 @@ namespace Reflex
             Bindings.Clear();
             Singletons.Clear();
         }
-        
+
         public BindingContractDefinition<TContract> Bind<TContract>()
         {
             return new BindingContractDefinition<TContract>(this);
@@ -71,7 +71,7 @@ namespace Reflex
                 Concrete = instance.GetType(),
                 Scope = BindingScope.SingletonLazy
             };
-            
+
             Bindings.Add(typeof(TContract), binding);
             Singletons.Add(typeof(TContract), instance);
         }
@@ -84,7 +84,7 @@ namespace Reflex
                 Concrete = instance.GetType(),
                 Scope = BindingScope.SingletonLazy
             };
-            
+
             Bindings.Add(contract, binding);
             Singletons.Add(contract, instance);
         }
@@ -100,7 +100,7 @@ namespace Reflex
             {
                 Debug.Log("B");
             }
-            
+
             return (TContract) Resolve(typeof(TContract));
         }
 
@@ -163,7 +163,7 @@ namespace Reflex
             method = null;
             return false;
         }
-        
+
         internal void InstantiateNonLazySingletons()
         {
             _singletonNonLazyResolver = new SingletonLazyResolver();

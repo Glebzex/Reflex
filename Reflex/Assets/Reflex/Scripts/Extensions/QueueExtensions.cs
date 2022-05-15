@@ -9,7 +9,7 @@ namespace Reflex
             queue.Enqueue(item);
             return queue;
         }
-        
+
         internal static bool TryDequeue<T>(this Queue<T> source, out T item)
         {
             if (source.Count > 0)

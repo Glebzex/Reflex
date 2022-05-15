@@ -7,7 +7,7 @@ namespace Reflex
     {
         internal UnhandledRuntimeScriptingBackendException(RuntimeScriptingBackend.Backend backend) : base(GenerateMessage(backend))
         {
-            
+
         }
 
         private static string GenerateMessage(RuntimeScriptingBackend.Backend backend)

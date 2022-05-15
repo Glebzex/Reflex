@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class PlayerPrefsCollectableRegistry : ICollectableRegistry
 {
-    public event Action OnValueChanged = delegate {  };
+    public event Action OnValueChanged = delegate { };
 
     public void Clear()
     {

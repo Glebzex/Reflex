@@ -61,10 +61,10 @@ namespace Reflex
         private static bool TryGetTypeGenericTypesAsAbstract(Type type, Type contract, out Type[] genericArguments)
         {
             genericArguments = type.BaseType != null &&
-                               type.BaseType.IsGenericType &&
-                               type.BaseType.GetGenericTypeDefinition() == contract
-                ? type.BaseType.GetGenericArguments()
-                : null;
+                type.BaseType.IsGenericType &&
+                type.BaseType.GetGenericTypeDefinition() == contract
+                    ? type.BaseType.GetGenericArguments()
+                    : null;
 
             return genericArguments != null;
         }
